@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Tejaswini Reddy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo" >
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="material-icons" onclick="closemenu()">close</i>
+            </ul>
+            <i class="material-icons" onclick="openmenu()">menu</i>
+        </nav>
+        
+        <div class="header-text">
+            
+            <h1> Hi, I'm <span>Tejaswini Reddy</span><br>from<span style="color:red;"> Bangalore institute of Technology </span></h1>
+            <p>B.E in CSE (IoT,Cyber Security and Blockchain Technology)</p>
+        </div>
+    </div>
+</div>
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p> I'm Tejaswini Reddy, a passionate engineering student specializing in IoT, Cybersecurity, and Blockchain Technology. I enjoy solving technical challenges and developing innovative solutions through programming, web development, and database management.
+                    I have hands-on experience in decentralized applications (DApps), smart contracts, and system security, showcased through projects like an Ethereum-based Carpooling DApp and a Library Management System.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('projects')">Projects</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><BR>Python, C</li>
+                        <li><span>Web Development</span><BR>HTML, CSS </li>
+                        <li><span>DataBase</span><BR>MySQL</li>
+                        <li><span>Computer Basics</span><BR>MS Word,MS PowerPoint</li>
+                    </ul>
+                </div>
+                <div class="tab-contents active-tab" id="projects">
+                    <ul>
+                        <li><span>Jan - 2025</span><br>Developed a personal portfolio website to showcase projects, skills, and achievements.</li>
+                        <li><span>Dec - 2024</span><br>Built a decentralized ride-sharing DApp with MetaMask authentication,and safety features using Ethereum smart contracts.</li>
+                        <li><span>Aug - 2024</span><br>Developed a library management system with a user-friendly interface, optimized database performance, and enhanced security.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>2022-Current</span><br>Bangalore Institute of Technology - 8.45 CGPA</li>
+                        <li><span>2020-2022</span><br>Rashtrotthana PU college - 94.8%</li>
+                        <li><span>2019-2020</span><br>Amara Jyothi School - 94.4%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="coontainer">
+        <h1 class="sub-title">Certifications</h1>
+        <div class="services-list">
+
+            <div>
+                <i class="material-icons">code</i>
+                <h2>Python Propgramming</h2>
+                <p>Earned certification in Python programming, covering fundamental concepts like variables, data types, control structures, functions, and object-oriented programming. Gained practical experience in writing efficient code for problem-solving and automation.</p>
+                <a href="Dhaaps.jpg" target="_blank">VIEW CERTIFICATE</a>
+            </div>
+            <div>
+                <i class="material-icons">attachment</i>
+                <h2>DBMS</h2>
+                <p>Earned certification in DBMS, covering relational databases, SQL queries, normalization, indexing, and transactions. Gained hands-on experience in database design, management, and optimization using MySQL, PostgreSQL, or SQLite.</p>
+                <a href="DBMS.pdf" target="_blank">VIEW CERTIFICATE</a>
+            </div>
+            <div>
+                <i class="material-icons">cloud</i>
+                <h2>Programming Fundamentals</h2>
+                <p>Earned certification in Python programming, covering core concepts such as variables, data types, loops, conditional statements, functions, and object-oriented programming. Gained hands-on experience in writing efficient and readable code for problem-solving and automation.</p>
+                <a href="infosys 1.pdf" target="_blank">VIEW CERTIFICATE</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------porfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="work-1.jpg">
+                <div class="layer">
+                    <h3>ONLINE LIBRARY MANAGEMENT SYSTEM</h3>
+                    <p>The app connects you to the talented people around the world.Download it from play store.</p>
+                    <a href=""><i class="material-icons">download</i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>ETHEREUM BASED CARPOOLING DApp</h3>
+                    <p>The app connects you to the talented people around the world.Download it from play store.</p>
+                   
+                    <a href="#"> <i class="material-icons">filter_none	</i></a>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world.Download it from play store.</p>
+                    <a href="#"><i class="material-icons">file_download</i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#"class="btn">see more</a>
+    </div>
+</div>
+<!-- -----------contact----------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="material-icons">send</i> Contact@example.com</p>
+                <p><i class="material-icons">phone_in_talk</i> 7337720649</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="material-icons">mail</i></a>
+                    <a href=""><i class="material-icons">facebook</i></a>
+                    <a href=""><i class="material-icons">link</i></a>
+                    <a href=""><i class="material-icons">face</i></a>
+                </div>   
+                <a href="my-cv.pdf" target="_blank" view class="btn btn2">View CV</a>
+                <a href="my-cv.pdf" download class="btn btn2">Download CV</a> 
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            Copyright @ Reddy. Made with <i class="material-icons" style="font-size:20px;color:red">favorite</i> By Tejaswini Reddy
+        </p>
+    </div>
+</div>
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+<script>
+
+var sidemenu = document.getElementById("sidemenu");
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+</script>
+
+    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz_Cet0zjGt-3c8QY6qfP7yzDvOLSU8T_o8HrGxcV27R7LyBVjaN8aZiuhNOYEmni5B/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =  document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

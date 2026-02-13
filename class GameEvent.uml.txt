@@ -1,0 +1,43 @@
+class GameEvent {
+  - eventType: String
+  - gameData: GameData
+  + startEvent(): void
+  + displayEvent(): void
+  + skipEvent(): void
+}
+
+class CommentaryManager {
+  - commentaryText: String
+  - audioFiles: List<String>
+  + generateCommentary(gameData: GameData): String
+  + fetchPlayerStats(player: PlayerStats): String
+  + playAudio(file: String): void
+}
+
+class PlayerStats {
+  - playerName: String
+  - performanceData: Map<String, int>
+  + updateStats(statType: String, value: int): void
+  + getKeyPlays(): List<String>
+  + comparePerformance(otherPlayer: PlayerStats): String
+}
+
+class VisualPresentation {
+  - graphics: List<String>
+  - animations: List<String>
+  + renderOverlay(data: GameData): void
+  + playHighlightClip(player: PlayerStats): void
+  + fadeToGame(): void
+}
+
+class UserInputHandler {
+  + skipShow(): void
+  + pauseEvent(): void
+  + toggleAccessibilityMode(): void
+}
+
+GameEvent --> CommentaryManager: "Generates Commentary"
+GameEvent --> VisualPresentation: "Displays Event"
+CommentaryManager --> PlayerStats: "Uses Data"
+VisualPresentation --> PlayerStats: "Displays Highlights"
+UserInputHandler --> GameEvent: "Skips or Pauses"
