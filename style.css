@@ -7,21 +7,83 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    background:black;
-    color:white;
-}
-#header{
-    width: 100%;
-    height: 100vh;
-    background-image: url('background.jpg');
+
+body {
+    margin: 0;
+    background: 
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.2)
+        ),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ_dtEv1S_p6Ef0jYxJ2c-5onw2JxYPRCFmkBPtr0SQQ&s");
+
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 30% 100%;
-    background-position: right;
-  
+
+    color: rgb(230, 226, 226);
 }
 
+#header {
+    width: 100%;
+    height: 100vh;
+    position: relative; /* for positioning the circle */
+}
+
+/* Circular photo using ::after */
+#header::after {
+    content: "";
+    position: absolute;
+    top: 50%;                /* vertical center */
+    right: 50px;             /* distance from right edge */
+    transform: translateY(-50%);
+    width: 380px;            /* circle size */
+    height: 500px;
+    border-radius: 50%;      /* makes it circular */
+    background-image: url("tejaswini.jpeg"); /* your photo */
+    background-size: cover;        /* fills circle */
+    background-position: center;   /* centers image */
+    border: 3px solid #000000;        /* optional white border */
+}
+
+
+.word-animate span {
+  opacity: 0;
+  display: inline-block;
+  animation: reveal 0.5s forwards;
+}
+
+/* animation delays */
+.word-animate span:nth-child(1) { animation-delay: 0.2s; }
+.word-animate span:nth-child(2) { animation-delay: 0.4s; }
+.word-animate span:nth-child(3) { animation-delay: 0.6s; }
+.word-animate span:nth-child(4) { animation-delay: 0.8s; }
+.word-animate span:nth-child(5) { animation-delay: 1.0s; }
+.word-animate span:nth-child(6) { animation-delay: 1.2s; }
+.word-animate span:nth-child(7) { animation-delay: 1.4s; }
+.word-animate span:nth-child(8) { animation-delay: 1.6s; }
+.word-animate span:nth-child(9) { animation-delay: 1.8s; }
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+.red-text {
+  color: red;
+}
 
 .container{
     padding:10px 10%;
@@ -34,7 +96,7 @@ nav{
     flex-wrap: wrap;
 }
 .logo{
-    width: 140px;
+    width: 150px;
 }
 
 nav ul li{
@@ -44,9 +106,9 @@ nav ul li{
 }
 
 nav ul li a{
-    color: white;
+    color:#fff;
     text-decoration: none;
-    font-size:18px;
+    font-size:20px;
     position: relative;
 
 }
@@ -55,7 +117,7 @@ nav ul li a::after{
     content:'';
     width:0;
     height:3px;
-    background: #0aa7d7;
+    background: #ff0000;
     position: absolute;
     left:0;
     bottom:-6px;
@@ -82,7 +144,7 @@ nav ul li a:hover::after{
 
 #about{
     padding:80px 0;
-    color:#ababab;
+    color:#a2a0a0;
 
 }
 
@@ -127,7 +189,7 @@ nav ul li a:hover::after{
     content:'';
     width: 0;
     height: 3px;
-    background: #0aa7d7;
+    background: #ff0000;
     position: absolute;
     left:0;
     bottom: -8px;
@@ -143,8 +205,8 @@ nav ul li a:hover::after{
     margin:10px 0;
 }
 .tab-contents ul li span{
-    color: #ff004f;
-    font-size: 14px;
+    color: #ff0000;
+    font-size: 22px;
 }
 .tab-contents{
     display: none;
@@ -169,7 +231,7 @@ nav ul li a:hover::after{
     margin-top:50px;
 }
 .services-list div{
-    background: #262626;
+    background: #020202;
     padding: 40px ;
    
     font-size: 13px;
@@ -184,13 +246,14 @@ nav ul li a:hover::after{
 }
 .services-list div a{
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
 .services-list div:hover{
-    background: #0aa7d7;
+    background:rgb(220, 38, 38)
+;
     transform: translateY(-10px);
 }
 
@@ -242,16 +305,16 @@ nav ul li a:hover::after{
     transition: height 0.5s;
 }
 .layer h3{
-    font-weight: 500;
+    font-weight: 1000;
     margin-bottom: 20px;
 }
 .layer a{
     margin-top: 20px;
-    color: #0aa7d7;
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
+    background: #000000;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -265,17 +328,18 @@ nav ul li a:hover::after{
 }
 .btn{
     display: block;
+    background-color: #0aa7d7;
     margin: 50px auto;
     width: fit-content;
     border:1px solid #0aa7d7;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: #000000;
    
 }
 .btn:hover{
-    background: #0aa7d7;
+    background: #ffffff;
 }
 
 
@@ -290,7 +354,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #0aa7d7;
+    color: #d70a0a;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -301,12 +365,12 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 20px;
     margin-right: 15px;
-    color: #ababab;
+    color: #ffffff;
     display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #0aa7d7;
+    color: #ff0000;
     transform: translateY(-5px);
 }
 .btn.btn2{
@@ -323,7 +387,7 @@ form input,form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: #000000;
     padding: 15px;
     margin: 15px 0;
     color: #fff;
@@ -341,7 +405,7 @@ form .btn2{
     width:100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: #000000;
     font-weight: 300;
     margin-top: 20px;
 }

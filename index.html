@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website - Tejaswini Reddy</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
@@ -15,19 +16,32 @@
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Certifications</a></li>
+                <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="material-icons" onclick="closemenu()">close</i>
             </ul>
             <i class="material-icons" onclick="openmenu()">menu</i>
         </nav>
         
-        <div class="header-text">
-            
-            <h1> Hi, I'm <span>Tejaswini Reddy</span><br>from<span style="color:red;"> Bangalore institute of Technology </span></h1>
-            <p>B.E in CSE (IoT,Cyber Security and Blockchain Technology)</p>
-        </div>
+       <div class="header-text">
+  <h1 class="word-animate">
+    <span style="color:white;">Hi,</span>
+    <span style="color:white;">I'm</span>
+    <span style="color:#0aa7d7;">Tejaswini</span>
+    <span style="color:#0aa7d7;">Reddy</span><br>
+    <span style="color:red;">Bangalore</span>
+    <span style="color:red;">Institute</span>
+    <span style="color:red;">of</span>
+    <span style="color:red;">Technology</span>
+  </h1>
+
+  <p style="color:white;">
+    B.E in CSE (IoT, Cyber Security and Blockchain Technology)
+  </p>
+</div>
+
+
     </div>
 </div>
 
@@ -36,44 +50,75 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="user.jpg">
+                <img src="tejaaa.jpeg" alt="Profile Image">
             </div>
+
             <div class="about-col-2">
-                <h1 class="sub-title">About me</h1>
-                <p> I'm Tejaswini Reddy, a passionate engineering student specializing in IoT, Cybersecurity, and Blockchain Technology. I enjoy solving technical challenges and developing innovative solutions through programming, web development, and database management.
-                    I have hands-on experience in decentralized applications (DApps), smart contracts, and system security, showcased through projects like an Ethereum-based Carpooling DApp and a Library Management System.</p>
-                
+                <h1 class="sub-title">About Me</h1>
+
+                <p>
+                    Computer Science student with a strong foundation in Python, Data Structures & Algorithms, SQL, and Power BI.
+                    Experienced in building efficient software solutions, working with databases, and developing responsive web applications.
+                    Interested in software development, AI, and data-driven systems, with a focus on solving real-world problems
+                    using practical and scalable technology. Actively improving technical skills through hands-on projects
+                    and continuous learning.
+                </p>
+
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links"onclick="opentab('projects')">Projects</p>
-                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
+
+                <!-- Skills -->
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Programming Languages</span><BR>Python, C</li>
-                        <li><span>Web Development</span><BR>HTML, CSS </li>
-                        <li><span>DataBase</span><BR>MySQL</li>
-                        <li><span>Computer Basics</span><BR>MS Word,MS PowerPoint</li>
+                        <li><span>Programming Languages</span><br>Python</li>
+                        <li><span>Web & Core Systems</span><br>HTML, CSS, JavaScript, OS, DBMS</li>
+                        <li><span>Databases</span><br>MySQL</li>
+                        <li><span>Tools & Technologies</span><br>VS Code, Jupyter Notebook, Power BI, MS Excel</li>
                     </ul>
                 </div>
-                <div class="tab-contents active-tab" id="projects">
+
+                <!-- Projects -->
+                <div class="tab-contents" id="projects">
                     <ul>
-                        <li><span>Jan - 2025</span><br>Developed a personal portfolio website to showcase projects, skills, and achievements.</li>
-                        <li><span>Dec - 2024</span><br>Built a decentralized ride-sharing DApp with MetaMask authentication,and safety features using Ethereum smart contracts.</li>
-                        <li><span>Aug - 2024</span><br>Developed a library management system with a user-friendly interface, optimized database performance, and enhanced security.</li>
+                        <li>
+                            <span>Secure Transmission Framework for Multimedia Using ECC (Nov 2025)</span><br>
+                            Built a secure multimedia transmission system using Elliptic Curve Cryptography,
+                            AES encryption, and Steganography to ensure confidentiality, integrity,
+                            and hidden communication. Implemented with Python (Flask).
+                        </li>
+
+                        <li>
+                            <span>Personal Portfolio Website (Jan 2025)</span><br>
+                            Designed and developed a responsive personal portfolio website to showcase projects,
+                            certifications, and technical skills with clean UI and smooth user interaction.
+                        </li>
+
+                        <li>
+                            <span>Ethereum-Based Carpooling DApp (Dec 2024)</span><br>
+                            Developed a decentralized carpooling DApp using Ethereum blockchain,
+                            Solidity smart contracts, and Ganache testing. Ensured trustless transactions
+                            and decentralization using Remix IDE.
+                        </li>
                     </ul>
                 </div>
-                <div class="tab-contents active-tab" id="education">
+
+                <!-- Education -->
+                <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>2022-Current</span><br>Bangalore Institute of Technology - 8.45 CGPA</li>
-                        <li><span>2020-2022</span><br>Rashtrotthana PU college - 94.8%</li>
-                        <li><span>2019-2020</span><br>Amara Jyothi School - 94.4%</li>
+                        <li><span>2022 – Present</span><br>Bangalore Institute of Technology – 8.57 CGPA</li>
+                        <li><span>2020 – 2022</span><br>Rashtrotthana PU College – 94.8%</li>
+                        <li><span>2019 – 2020</span><br>Amara Jyothi School – 94.4%</li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </div>
 </div>
+
 
 <div id="services">
     <div class="coontainer">
@@ -82,21 +127,19 @@
 
             <div>
                 <i class="material-icons">code</i>
-                <h2>Python Propgramming</h2>
-                <p>Earned certification in Python programming, covering fundamental concepts like variables, data types, control structures, functions, and object-oriented programming. Gained practical experience in writing efficient code for problem-solving and automation.</p>
-                <a href="Dhaaps.jpg" target="_blank">VIEW CERTIFICATE</a>
+                <h2>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h2>
+                <a href="Oracle certificate.png" target="_blank">VIEW CERTIFICATE</a>
+                
+            </div>
+            <div>
+                <i class="material-icons">cloud</i>
+                <h2>Data Analysis in Python: Using Pandas DataFrames</h2>
+                <a href="python courseera.png" target="_blank">VIEW CERTIFICATE</a>
             </div>
             <div>
                 <i class="material-icons">attachment</i>
                 <h2>DBMS</h2>
-                <p>Earned certification in DBMS, covering relational databases, SQL queries, normalization, indexing, and transactions. Gained hands-on experience in database design, management, and optimization using MySQL, PostgreSQL, or SQLite.</p>
                 <a href="DBMS.pdf" target="_blank">VIEW CERTIFICATE</a>
-            </div>
-            <div>
-                <i class="material-icons">cloud</i>
-                <h2>Programming Fundamentals</h2>
-                <p>Earned certification in Python programming, covering core concepts such as variables, data types, loops, conditional statements, functions, and object-oriented programming. Gained hands-on experience in writing efficient and readable code for problem-solving and automation.</p>
-                <a href="infosys 1.pdf" target="_blank">VIEW CERTIFICATE</a>
             </div>
         </div>
     </div>
@@ -108,33 +151,29 @@
         <div class="work-list">
 
             <div class="work">
-                <img src="work-1.jpg">
+                <img src="Secure ECC.jpg">
                 <div class="layer">
-                    <h3>ONLINE LIBRARY MANAGEMENT SYSTEM</h3>
-                    <p>The app connects you to the talented people around the world.Download it from play store.</p>
-                    <a href=""><i class="material-icons">download</i></a>
+                    <h3>SECURE TRANSMISSION FRAMEWORK FOR MULTIMEDIA USING ECC</h3>
+                    <a href="report__2_.pdf"><i class="material-icons">download</i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="work-2.png">
+                <img src="Ethereum.png">
                 <div class="layer">
-                    <h3>ETHEREUM BASED CARPOOLING DApp</h3>
-                    <p>The app connects you to the talented people around the world.Download it from play store.</p>
-                   
-                    <a href="#"> <i class="material-icons">filter_none	</i></a>
+                    <h3>ETHEREUM BASED CARPOOLING DApp</h3>                   
+                    <a href="report latex.pdf"> <i class="material-icons">download</i></a>
                     
                 </div>
             </div>
             <div class="work">
-                <img src="work-3.png">
+                <img src="Portfolio.jpg">
                 <div class="layer">
-                    <h3>Online Shopping App</h3>
-                    <p>The app connects you to the talented people around the world.Download it from play store.</p>
+                    <h3>PERSONAL PORTFOLIO WEBSITE</h3>
                     <a href="#"><i class="material-icons">file_download</i></a>
                 </div>
             </div>
         </div>
-        <a href="#"class="btn">see more</a>
+        <a href="#"class="btn">SEE MORE</a>
     </div>
 </div>
 <!-- -----------contact----------- -->
@@ -144,31 +183,31 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="material-icons">send</i> Contact@example.com</p>
+                <p><i class="material-icons">send</i> navaneethalokesh86@gmail.com</p>
                 <p><i class="material-icons">phone_in_talk</i> 7337720649</p>
                 <div class="social-icons">
-                    <a href="https://facebook.com" target="_blank"><i class="material-icons">mail</i></a>
-                    <a href=""><i class="material-icons">facebook</i></a>
-                    <a href=""><i class="material-icons">link</i></a>
-                    <a href=""><i class="material-icons">face</i></a>
+                    <a href="mailto:navaneethalokesh86@gmail.com" target="_blank"><i class="material-icons">mail</i></a>
+                    <a href="tel:+917337720649"><i class="material-icons">phone</i></a>
+                    <a href="https://www.linkedin.com/in/tejaswini-lokeshreddy-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/TejaswiniReddy-09" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>   
-                <a href="my-cv.pdf" target="_blank" view class="btn btn2">View CV</a>
-                <a href="my-cv.pdf" download class="btn btn2">Download CV</a> 
+                <a href="L_Tejaswini_Reddy_2026.pdf" target="_blank" view class="btn btn2">View CV</a>
+                <a href="L_Tejaswini_Reddy_2026.pdf" download class="btn btn2">Download CV</a> 
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
+                <form name="submit-to-google-sheet" id="contactForm">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your email" required>
                     <textarea name="Message" rows="6" placeholder="Your message" ></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
-                <span id="msg"></span>
+                <span id="msg" style="display:block; margin-top:10px; font-weight:500;"></span>
             </div>
         </div>
     </div>
     <div class="copyright">
         <p>
-            Copyright @ Reddy. Made with <i class="material-icons" style="font-size:20px;color:red">favorite</i> By Tejaswini Reddy
+            Copyright @ Reddy. Made with <i class="material-icons" style="font-size:20px;color:red">favorite</i> By Tejaaaaaa
         </p>
     </div>
 </div>
@@ -206,23 +245,36 @@ function closemenu(){
 
 </script>
 
-    
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz_Cet0zjGt-3c8QY6qfP7yzDvOLSU8T_o8HrGxcV27R7LyBVjaN8aZiuhNOYEmni5B/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg =  document.getElementById("msg")
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz_Cet0zjGt-3c8QY6qfP7yzDvOLSU8T_o8HrGxcV27R7LyBVjaN8aZiuhNOYEmni5B/exec';
+const form = document.getElementById('contactForm');
+const msg = document.getElementById('msg');
 
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {msg.innerHTML = "Message Sent Successfully"
-            setTimeout(function(){
-                msg.innerHTML=""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    // ⚡ Show message instantly
+    msg.innerHTML = "Sending... 🚀";
+    msg.style.color = "White";
+
+    fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
     })
-  </script>
-</body>
-</html>
+    .then(() => {
+        msg.innerHTML = "Message Sent Successfully 🎉";
+        msg.style.color = "White";
+
+        setTimeout(() => {
+            msg.innerHTML = "";
+        }, 3000);
+
+        form.reset();
+    })
+    .catch(error => {
+        msg.innerHTML = "Something went wrong ❌";
+        msg.style.color = "red";
+        console.error('Error!', error.message);
+    });
+});
+</script>
